@@ -70,6 +70,12 @@ export const TopBar: React.FC = () => {
           >
             <Video size={16} className="mr-1" /> Feeds
           </Button>
+          <Button 
+            variant={isWidgetOpen('fire-support') ? 'active' : 'default'}
+            onClick={() => handleWidgetToggle('fire-support')}
+          >
+            <Activity size={16} className="mr-1" /> Fire Support
+          </Button>
         </div>
       </div>
       

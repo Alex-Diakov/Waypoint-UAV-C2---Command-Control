@@ -6,7 +6,7 @@ export const DroneFleetStatus: React.FC = () => {
 
   return (
     <div className="flex-1 flex flex-col overflow-hidden">
-      <div className="bg-[#111111] border-b border-zinc-800 p-2 text-zinc-500 font-bold tracking-widest uppercase text-[10px]">
+      <div className="bg-tactical-surface border-b border-tactical-border p-2 text-tactical-text-muted font-bold tracking-widest uppercase text-[10px]">
         Fleet Status / Telemetry
       </div>
       <div className="flex-1 overflow-y-auto">
@@ -16,15 +16,15 @@ export const DroneFleetStatus: React.FC = () => {
               const isCritical = drone.battery < 20;
               const isWarning = drone.battery >= 20 && drone.battery < 40;
               
-              const colorClass = isCritical ? 'bg-red-500' : isWarning ? 'bg-amber-500' : 'bg-[#00FF41]';
-              const textClass = isCritical ? 'text-red-500' : isWarning ? 'text-amber-500' : 'text-[#00FF41]';
+              const colorClass = isCritical ? 'bg-tactical-red' : isWarning ? 'bg-tactical-orange' : 'bg-tactical-green';
+              const textClass = isCritical ? 'text-tactical-red' : isWarning ? 'text-tactical-orange' : 'text-tactical-green';
 
               return (
-                <tr key={drone.id} className="border-b border-zinc-800/50 hover:bg-[#111111] transition-colors">
+                <tr key={drone.id} className="border-b border-tactical-border/50 hover:bg-tactical-surface-hover transition-colors text-[11px] font-mono tracking-widest">
                   <td className="p-3 w-1/4">
                     <span className={`font-bold ${textClass}`}>{drone.name}</span>
                   </td>
-                  <td className="p-3 w-1/4 text-[10px] uppercase tracking-wider text-zinc-400">
+                  <td className="p-3 w-1/4 text-[10px] uppercase tracking-wider text-tactical-text-muted">
                     {drone.status}
                   </td>
                   <td className="p-3 w-1/2">
@@ -32,7 +32,7 @@ export const DroneFleetStatus: React.FC = () => {
                       <span className={`w-8 text-right font-bold ${textClass}`}>
                         {Math.floor(drone.battery)}%
                       </span>
-                      <div className="flex-1 h-1 bg-zinc-800">
+                      <div className="flex-1 h-1 bg-tactical-border/50">
                         <div 
                           className={`h-full ${colorClass}`} 
                           style={{ width: `${Math.floor(drone.battery)}%` }}

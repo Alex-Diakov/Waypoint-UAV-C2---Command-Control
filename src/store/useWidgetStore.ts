@@ -1,7 +1,7 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 
-export type WidgetId = 'uav-fleet' | 'installations' | 'video-feed' | 'design-system';
+export type WidgetId = 'uav-fleet' | 'installations' | 'video-feed' | 'design-system' | 'fire-support';
 
 export interface WidgetGroupState {
   id: string;
@@ -41,6 +41,7 @@ export const WIDGET_CONFIGS: Record<WidgetId, { title: string, defaultWidth: num
   'installations': { title: 'Installations', defaultWidth: 350, defaultHeight: 400 },
   'video-feed': { title: 'Live Video Feed', defaultWidth: 480, defaultHeight: 360 },
   'design-system': { title: 'Design System', defaultWidth: 400, defaultHeight: 500 },
+  'fire-support': { title: 'Fire Support', defaultWidth: 380, defaultHeight: 650 },
 };
 
 export const useWidgetStore = create<WidgetStore>()(

@@ -14,7 +14,7 @@ export const DesignSystemPanel: React.FC = () => {
         <div className="text-[10px] text-tactical-text-muted font-bold uppercase tracking-widest">Layer 0 - Base Map</div>
         <div className="p-4 border border-tactical-border bg-tactical-bg flex items-center justify-between">
           <span>--color-tactical-bg</span>
-          <span className="text-tactical-text-muted">#050505</span>
+          <span className="text-tactical-text-muted">#0b0f14</span>
         </div>
         <p className="text-[10px] text-tactical-text-muted">Absolute bottom layer, contains map tiles.</p>
       </div>
@@ -24,7 +24,7 @@ export const DesignSystemPanel: React.FC = () => {
         <div className="text-[10px] text-tactical-text-muted font-bold uppercase tracking-widest">Layer 1 - App Chrome</div>
         <div className="p-4 border border-tactical-border bg-tactical-backdrop backdrop-blur-md flex items-center justify-between">
           <span>--color-tactical-backdrop + blur</span>
-          <span className="text-tactical-text-muted">rgba(10, 10, 10, 0.9)</span>
+          <span className="text-tactical-text-muted">rgba(15, 21, 28, 0.9)</span>
         </div>
         <p className="text-[10px] text-tactical-text-muted">Used for TopBar, Side Controls, and Widget outer containers.</p>
       </div>
@@ -34,11 +34,11 @@ export const DesignSystemPanel: React.FC = () => {
         <div className="text-[10px] text-tactical-text-muted font-bold uppercase tracking-widest">Layer 2 - Widget Surface</div>
         <div className="p-4 border border-tactical-border bg-tactical-surface-dark flex items-center justify-between">
           <span>--color-tactical-surface-dark</span>
-          <span className="text-tactical-text-muted">#0a0a0a</span>
+          <span className="text-tactical-text-muted">#151c24</span>
         </div>
         <div className="p-4 border border-tactical-border bg-tactical-surface flex items-center justify-between">
           <span>--color-tactical-surface</span>
-          <span className="text-tactical-text-muted">#111111</span>
+          <span className="text-tactical-text-muted">#1e2732</span>
         </div>
         <p className="text-[10px] text-tactical-text-muted">Used for widget bodies, panels, and inner static containers.</p>
       </div>
@@ -48,7 +48,7 @@ export const DesignSystemPanel: React.FC = () => {
         <div className="text-[10px] text-tactical-text-muted font-bold uppercase tracking-widest">Layer 3 - Interactive</div>
         <div className="p-4 border border-tactical-border bg-tactical-surface-hover flex items-center justify-between">
           <span>--color-tactical-surface-hover</span>
-          <span className="text-tactical-text-muted">#1a1a1a</span>
+          <span className="text-tactical-text-muted">#273341</span>
         </div>
         <p className="text-[10px] text-tactical-text-muted">Used for hover states on buttons, list items, and active elements.</p>
       </div>

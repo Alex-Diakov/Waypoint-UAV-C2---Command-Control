@@ -11,7 +11,7 @@ export const DroneAlerts: React.FC = () => {
 
   return (
     <div className="flex-1 flex flex-col border-b border-zinc-800 overflow-hidden">
-      <div className="bg-[#111111] border-b border-zinc-800 p-2 text-zinc-500 font-bold tracking-widest uppercase text-[10px]">
+      <div className="bg-tactical-surface border-b border-tactical-border p-2 text-tactical-text-muted font-bold tracking-widest uppercase text-[10px]">
         AI Alerts / Action Required
       </div>
       <div className="p-4 flex-1 overflow-y-auto space-y-4">

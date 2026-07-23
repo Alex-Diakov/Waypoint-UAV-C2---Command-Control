@@ -6,25 +6,25 @@
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
 
   /* Tactical Color System */
-  --color-tactical-bg: #050505;
-  --color-tactical-backdrop: rgba(10, 10, 10, 0.9); /* Used for over-map panels */
-  --color-tactical-surface-dark: #0a0a0a;
-  --color-tactical-surface: #111111;
-  --color-tactical-surface-hover: #1a1a1a;
-  --color-tactical-border: #2a2a2a;
-  --color-tactical-border-light: #404040;
+  --color-tactical-bg: #0b0f14;
+  --color-tactical-backdrop: rgba(15, 21, 28, 0.9); /* Used for over-map panels */
+  --color-tactical-surface-dark: #151c24;
+  --color-tactical-surface: #1e2732;
+  --color-tactical-surface-hover: #273341;
+  --color-tactical-border: #324050;
+  --color-tactical-border-light: #415265;
   
   /* Semantic Colors */
-  --color-tactical-primary: #38bdf8;
-  --color-tactical-green: #10b981;
-  --color-tactical-red: #ef4444;
+  --color-tactical-primary: #5ec2c2;
+  --color-tactical-green: #2dd4bf;
+  --color-tactical-red: #f87171;
   --color-tactical-orange: #f59e0b;
-  --color-tactical-blue: #3b82f6;
-  --color-tactical-offline: #3f3f46;
+  --color-tactical-blue: #60a5fa;
+  --color-tactical-offline: #4b5563;
   
   /* Text Colors */
-  --color-tactical-text: #f3f4f6;
-  --color-tactical-text-muted: #808080;
+  --color-tactical-text: #d8e2ed;
+  --color-tactical-text-muted: #798d9f;
 }
 
 /* Base resets for tactical feel */

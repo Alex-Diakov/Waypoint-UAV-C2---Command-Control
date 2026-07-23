@@ -9,6 +9,7 @@ import { MapControls } from './features/map/components/MapControls';
 import { TopBar } from './layout/TopBar';
 import { VideoFeedsPanel } from './features/drones/components/VideoFeedsPanel';
 import { DesignSystemPanel } from './features/settings/components/DesignSystemPanel';
+import { FireSupportPanel } from './features/fire-support/components/FireSupportPanel';
 import { useHotkeys } from './hooks/useHotkeys';
 
 const WIDGET_COMPONENTS: Record<WidgetId, React.ReactNode> = {
@@ -16,6 +17,7 @@ const WIDGET_COMPONENTS: Record<WidgetId, React.ReactNode> = {
   'installations': <InstallationsPanel />,
   'video-feed': <VideoFeedsPanel />,
   'design-system': <DesignSystemPanel />,
+  'fire-support': <FireSupportPanel />,
 };
 
 export default function App() {
